@@ -1,0 +1,45 @@
+.upgradeSection {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  max-width: 600px;
+}
+
+.upgradeButton {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 200px;
+  text-align: left;
+}
+
+.upgradeButton.available {
+  border-color: #ffd700;
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.upgradeButton.available:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.upgradeButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.upgradeName {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.upgradeInfo {
+  font-size: 0.9rem;
+  color: #8a8a8a;
+}

@@ -1,0 +1,20 @@
+.clickEffect {
+  position: absolute;
+  pointer-events: none;
+  color: #ffd700;
+  font-weight: bold;
+  animation: floatUp 0.5s ease-out forwards;
+  user-select: none;
+  z-index: 10;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px) scale(1.2);
+    opacity: 0;
+  }
+}
